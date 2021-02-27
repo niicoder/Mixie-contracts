@@ -1,7 +1,7 @@
 const hre = require('hardhat');
 
 async function main() {
-  const MixieAccessControl = await ethers.getContractFactory('MixieAccessControl');
+  const MixieAccessControl = await hre.ethers.getContractFactory('MixieAccessControl');
   const mixieAccessControl = await MixieAccessControl.deploy();
   await mixieAccessControl.deployed();
 

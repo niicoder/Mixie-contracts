@@ -32,7 +32,7 @@ contract Mixie is ERC721 {
         uint256 newTokenId = _tokenIds.current();
         _tokenIds.increment();
         _safeMint(player, newTokenId);
-        // _setTokenURI(newTokenId, _tokenURI);
+        _setTokenURI(newTokenId, _tokenURI);
 
         return newTokenId;
     }

@@ -2,7 +2,7 @@ const hre = require('hardhat');
 
 async function main() {
   const Mix = await hre.ethers.getContractFactory('Mix');
-  const mix = await Mix.deploy(hre.ethers.utils.parseEther('300000'), 'Mix', 'MIX');
+  const mix = await Mix.deploy(hre.ethers.utils.parseEther('1000000'), 'Mix', 'MIX');
 
   await mix.deployed();
 
